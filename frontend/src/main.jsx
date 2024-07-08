@@ -7,7 +7,7 @@ export const Context = createContext({
   isAuthorized: false,
 });
 app.use(cors({
-    origin: 'https://job-seeking-website-dy4tsz77z.vercel.app',
+    origin: 'https://job-seeking-website-hhul-backend.vercel.app',
     methods: 'GET,POST,PUT,DELETE',
     allowedHeaders: 'Content-Type,Authorization'
 }));
