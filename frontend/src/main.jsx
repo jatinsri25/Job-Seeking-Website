@@ -7,7 +7,7 @@ export const Context = createContext({
 });
 app.use(cors(
   {
-    origin:{""},
+    origin:{"https://job-seeking-website-hhul-backend.vercel.app"},
     methods:{"POST","GET"},
     credentials: true
   }
