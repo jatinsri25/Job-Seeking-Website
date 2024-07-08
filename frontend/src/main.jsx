@@ -5,6 +5,13 @@ import App from "./App.jsx";
 export const Context = createContext({
   isAuthorized: false,
 });
+app.use(cors(
+  {
+    origin:{""},
+    methods:{"POST","GET"},
+    credentials: true
+  }
+  ));
 
 const AppWrapper = () => {
   const [isAuthorized, setIsAuthorized] = useState(false);
