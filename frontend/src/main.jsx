@@ -1,15 +1,15 @@
 import React, { createContext, useState } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-const cors = require('cors');
+import cors from 'cors';
 
 export const Context = createContext({
   isAuthorized: false,
 });
 app.use(cors({
     origin: 'https://job-seeking-website-hhul-backend.vercel.app',
-    methods: 'GET,POST,PUT,DELETE',
-    allowedHeaders: 'Content-Type,Authorization'
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 app.post('/api/v1/user/register', async (req, res) => {
     try {
